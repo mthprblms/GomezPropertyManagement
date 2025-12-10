@@ -4,7 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gomez Property Management | Your Investment is Our Business</title>
+    <title>Gomez Property Management | Premier Property Managers in Middle Tennessee</title>
+    <meta name="description"
+        content="Trusted property management in Clarksville, Hohenwald, and Middle Tennessee. We specialize in tenant screening, rent collection, and property maintenance to protect your investment.">
+    <meta name="keywords"
+        content="Property Management, Clarksville TN, Hohenwald TN, Middle Tennessee, Rental Management, Tenant Screening, Real Estate Investing, Property Maintenance">
+    <meta name="author" content="Gomez Property Management">
+    <link rel="canonical" href="https://www.gomezpropertymanagement.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.gomezpropertymanagement.com/">
+    <meta property="og:title" content="Gomez Property Management | Premier Property Managers in Middle TN">
+    <meta property="og:description"
+        content="Maximize your rental income with Gomez Property Management. Expert services in Clarksville and Middle Tennessee including tenant placement and maintenance.">
+    <meta property="og:image" content="https://www.gomezpropertymanagement.com/modern_house_exterior.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.gomezpropertymanagement.com/">
+    <meta property="twitter:title" content="Gomez Property Management | Premier Property Managers in Middle TN">
+    <meta property="twitter:description"
+        content="Maximize your rental income with Gomez Property Management. Expert services in Clarksville and Middle Tennessee.">
+    <meta property="twitter:image" content="https://www.gomezpropertymanagement.com/modern_house_exterior.png">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Gomez Property Management",
+      "image": "https://www.gomezpropertymanagement.com/gpmSMALL.png",
+      "@id": "https://www.gomezpropertymanagement.com",
+      "url": "https://www.gomezpropertymanagement.com",
+      "telephone": "931-435-5824",
+      "email": "felixgomez5887@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Hohenwald",
+        "addressRegion": "TN",
+        "postalCode": "38462",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.5484,
+        "longitude": -87.5539
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/gomezpropertymanagement"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do you charge for property management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our property management fees are competitive and transparent. We typically charge a percentage of the monthly rent collected, which covers all our comprehensive services including tenant screening, rent collection, maintenance coordination, and financial reporting. Contact us for a customized quote based on your specific property needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you screen potential tenants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We conduct rigorous tenant screening that includes comprehensive credit checks, criminal background checks, employment verification, rental history verification, and income verification. Our multi-step process ensures we place only qualified, reliable tenants in your property, protecting your investment and reducing turnover."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to find a tenant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The rental market in Clarksville and Middle Tennessee is dynamic. On average, we can place a qualified tenant within 2-4 weeks of listing your property. Our professional photography, strategic pricing, and marketing across multiple platforms help minimize vacancy time and maximize your rental income."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle maintenance requests?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! We coordinate all maintenance requests through our 24/7 emergency hotline and trusted network of licensed vendors. We handle everything from routine maintenance to emergency repairs, ensuring quick response times and quality work at competitive prices. You'll receive detailed reports on all maintenance activities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When do I get my rental income?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide monthly rental income distributions, typically processed within 3-5 business days after rent is collected. You'll receive detailed monthly statements showing all income and expenses, making tax time easier. We also provide year-end 1099 forms for your convenience."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -536,6 +652,62 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            user-select: none;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            color: var(--secondary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 1.5rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding-bottom: 1.5rem;
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -602,6 +774,25 @@
                     window.location.href = `mailto:felixgomez5887@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
                 });
             }
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                    });
+
+                    // Toggle current item
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
         });
     </script>
 </head>
@@ -610,7 +801,8 @@
 
     <header id="main-header">
         <div class="logo-container">
-            <img src="./gpmSMALL.png" alt="Gomez Property Management Logo" id="header-logo">
+            <img src="./gpmSMALL.png" alt="Gomez Property Management Logo - Trusted Property Managers in Middle TN"
+                title="Gomez Property Management" id="header-logo">
         </div>
         <nav id="main-nav">
             <ul>
@@ -624,21 +816,25 @@
 
     <section id="hero">
         <div class="hero-content">
-            <h1 class="fade-in-up">Your Investment is Our Business.</h1>
-            <p class="fade-in-up delay-1">Comprehensive, Professional, and Driven by Your Success.</p>
+            <h1 class="fade-in-up">Expert Property Management in Middle Tennessee</h1>
+            <p class="fade-in-up delay-1">Your Investment is Our Business. Comprehensive, Professional, and Driven by
+                Your Success in Clarksville and Hohenwald.</p>
             <a href="#contact" class="hero-btn fade-in-up delay-2">Get a Free Consultation</a>
         </div>
     </section>
 
     <section id="about" class="section-padding">
         <div class="container">
-            <h2 class="section-title">Why Choose Gomez Property Management?</h2>
-            <p class="section-subtitle">We don't just manage properties; we protect your investment.</p>
+            <h2 class="section-title">Why Choose Gomez Property Management for Your Clarksville & Middle TN Properties?
+            </h2>
+            <p class="section-subtitle">We don't just manage properties; we protect your investment with local expertise
+                and dedicated care.</p>
 
             <div class="features-grid">
                 <div class="feature-card scroll-animate">
-                    <h3>Local Expertise</h3>
-                    <p>As a local company, we know the Clarksville and Middle Tennessee market inside and out.
+                    <h3>Unmatched Local Expertise</h3>
+                    <p>As a locally owned company, we know the Clarksville, Hohenwald, and Middle Tennessee real estate
+                        markets inside and out.
                         You work
                         directly with Felix and his dedicated team.</p>
                 </div>
@@ -661,13 +857,17 @@
 
             <div class="image-gallery">
                 <div class="gallery-item scroll-animate">
-                    <img src="./handshake_keys.png" alt="Handshake with keys">
+                    <img src="./handshake_keys.png"
+                        alt="Property Manager handing keys to happy tenant in Clarksville TN"
+                        title="Reliable Tenant Placement">
                 </div>
                 <div class="gallery-item scroll-animate delay-1">
-                    <img src="./property_inspection.png" alt="Property Inspection">
+                    <img src="./property_inspection.png" alt="Professional property inspection in Middle Tennessee"
+                        title="Thorough Property Inspections">
                 </div>
                 <div class="gallery-item scroll-animate delay-2">
-                    <img src="./office_meeting.png" alt="Office Meeting">
+                    <img src="./office_meeting.png" alt="Real estate consultation with Gomez Property Management"
+                        title="Expert Real Estate Consultation">
                 </div>
             </div>
         </div>
@@ -751,6 +951,75 @@
         </div>
     </section>
 
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Get answers to common questions about our property management services</p>
+
+            <div class="faq-container">
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        How much do you charge for property management?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our property management fees are competitive and transparent. We typically charge a
+                            percentage of the monthly rent collected, which covers all our comprehensive services
+                            including tenant screening, rent collection, maintenance coordination, and financial
+                            reporting. Contact us for a customized quote based on your specific property needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate delay-1">
+                    <div class="faq-question">
+                        How do you screen potential tenants?
+                    </div>
+                    <div class="faq-answer">
+                        <p>We conduct rigorous tenant screening that includes comprehensive credit checks, criminal
+                            background checks, employment verification, rental history verification, and income
+                            verification. Our multi-step process ensures we place only qualified, reliable tenants in
+                            your property, protecting your investment and reducing turnover.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate delay-2">
+                    <div class="faq-question">
+                        How long does it take to find a tenant?
+                    </div>
+                    <div class="faq-answer">
+                        <p>The rental market in Clarksville and Middle Tennessee is dynamic. On average, we can place a
+                            qualified tenant within 2-4 weeks of listing your property. Our professional photography,
+                            strategic pricing, and marketing across multiple platforms help minimize vacancy time and
+                            maximize your rental income.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate delay-3">
+                    <div class="faq-question">
+                        Do you handle maintenance requests?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We coordinate all maintenance requests through our 24/7 emergency hotline and
+                            trusted network of licensed vendors. We handle everything from routine maintenance to
+                            emergency repairs, ensuring quick response times and quality work at competitive prices.
+                            You'll receive detailed reports on all maintenance activities.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        When do I get my rental income?
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide monthly rental income distributions, typically processed within 3-5 business days
+                            after rent is collected. You'll receive detailed monthly statements showing all income and
+                            expenses, making tax time easier. We also provide year-end 1099 forms for your convenience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section-padding">
         <div class="container contact-container">
             <div class="contact-text">
@@ -781,6 +1050,62 @@
                     <textarea name="message" placeholder="How can we help you?" required></textarea>
                     <button type="submit">Submit</button>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="local-guide" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Property Management Insights: Maximizing Your Middle Tennessee Investment</h2>
+            <div class="guide-content" style="max-width: 900px; margin: 0 auto; color: #555; line-height: 1.8;">
+                <h3 style="color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem;">Why Professional
+                    Property Management in Clarksville Matters</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    Investing in rental properties in <strong>Clarksville, TN</strong> and <strong>Hohenwald,
+                        TN</strong> offers incredible opportunities for passive income and long-term wealth building.
+                    However, the day-to-day reality of being a landlord can quickly become overwhelming. From late-night
+                    maintenance calls to navigating complex <strong>Tennessee landlord-tenant laws</strong>,
+                    self-management often costs more in time and stress than it saves in fees. That's where
+                    <strong>Gomez Property Management</strong> steps in.
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    As your dedicated <strong>Middle Tennessee property manager</strong>, we handle every aspect of your
+                    rental business. Our deep understanding of the local market ensures your property is priced
+                    competitively to attract high-quality tenants while maximizing your ROI. We don't just collect rent;
+                    we implement strategic marketing, rigorous tenant screening, and proactive maintenance plans that
+                    preserve your property's value for years to come.
+                </p>
+
+                <h3 style="color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem;">The Importance of
+                    Rigorous Tenant Screening</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    Placing the wrong tenant can be a costly mistake. Our comprehensive <strong>tenant screening
+                        process</strong> is the first line of defense for your investment. We go beyond simple credit
+                    checks, verifying employment, rental history, and conducting background checks to ensure we place
+                    reliable, responsible tenants who treat your property with respect. This meticulous approach
+                    significantly reduces eviction rates and ensures consistent cash flow for our owners.
+                </p>
+
+                <h3 style="color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem;">Proactive Maintenance:
+                    Protecting Your Asset</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    Deferred maintenance is the silent killer of rental profitability. At Gomez Property Management, we
+                    believe in a proactive approach. Our network of trusted, licensed vendors in
+                    <strong>Clarksville</strong> and surrounding areas allows us to address issues quickly and
+                    affordably before they become major repairs. Whether it's routine HVAC inspections or emergency
+                    plumbing repairs, we coordinate everything, keeping you informed without burdening you with the
+                    logistics.
+                </p>
+
+                <h3 style="color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem;">Partner with a Local
+                    Expert</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    When you choose Gomez Property Management, you're not just hiring a service; you're partnering with
+                    a team that cares about your success. We are proud to serve <strong>Hohenwald</strong>,
+                    <strong>Clarksville</strong>, and the greater <strong>Middle Tennessee</strong> region. Let us
+                    handle the headaches of property management so you can enjoy the rewards of your investment. Contact
+                    us today for a free rental analysis and discover the difference professional management can make.
+                </p>
             </div>
         </div>
     </section>
