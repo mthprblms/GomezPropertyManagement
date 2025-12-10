@@ -422,6 +422,27 @@
             transform: translateY(0);
         }
 
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             #main-header {
@@ -507,10 +528,12 @@
                 z-index: 1;
             }
 
-            @media (max-width: 768px) {
-                .about-grid {
-                    grid-template-columns: 1fr;
-                }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -609,38 +632,42 @@
 
     <section id="about" class="section-padding">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2 class="section-title" style="text-align: left;">Why Choose Gomez Property Management?</h2>
-                    <p class="section-subtitle" style="text-align: left; margin-left: 0;">We don't just manage
-                        properties; we protect your investment.</p>
+            <h2 class="section-title">Why Choose Gomez Property Management?</h2>
+            <p class="section-subtitle">We don't just manage properties; we protect your investment.</p>
 
-                    <div class="features-grid" style="grid-template-columns: 1fr;">
-                        <div class="feature-card scroll-animate">
-                            <h3>Local Expertise</h3>
-                            <p>As a local company, we know the Clarksville and Middle Tennessee market inside and out.
-                                You work
-                                directly with Felix and his dedicated team.</p>
-                        </div>
-                        <div class="feature-card scroll-animate delay-1">
-                            <h3>Proactive Maintenance</h3>
-                            <p>We don't wait for things to break down. Our preventative maintenance plans protect your
-                                property's value and avoid costly repairs.</p>
-                        </div>
-                        <div class="feature-card scroll-animate delay-2">
-                            <h3>Proven Tenant Screening</h3>
-                            <p>Our rigorous screening process ensures we place reliable, long-term tenants in your
-                                property.</p>
-                        </div>
-                        <div class="feature-card scroll-animate delay-3">
-                            <h3>Transparent Financials</h3>
-                            <p>Receive detailed, easy-to-understand monthly statements. We maintain strict trust
-                                accounting.</p>
-                        </div>
-                    </div>
+            <div class="features-grid">
+                <div class="feature-card scroll-animate">
+                    <h3>Local Expertise</h3>
+                    <p>As a local company, we know the Clarksville and Middle Tennessee market inside and out.
+                        You work
+                        directly with Felix and his dedicated team.</p>
                 </div>
-                <div class="about-image scroll-animate delay-2">
-                    <img src="./handshake_keys.png" alt="Property Manager handing keys to client">
+                <div class="feature-card scroll-animate delay-1">
+                    <h3>Proactive Maintenance</h3>
+                    <p>We don't wait for things to break down. Our preventative maintenance plans protect your
+                        property's value and avoid costly repairs.</p>
+                </div>
+                <div class="feature-card scroll-animate delay-2">
+                    <h3>Proven Tenant Screening</h3>
+                    <p>Our rigorous screening process ensures we place reliable, long-term tenants in your
+                        property.</p>
+                </div>
+                <div class="feature-card scroll-animate delay-3">
+                    <h3>Transparent Financials</h3>
+                    <p>Receive detailed, easy-to-understand monthly statements. We maintain strict trust
+                        accounting.</p>
+                </div>
+            </div>
+
+            <div class="image-gallery">
+                <div class="gallery-item scroll-animate">
+                    <img src="./handshake_keys.png" alt="Handshake with keys">
+                </div>
+                <div class="gallery-item scroll-animate delay-1">
+                    <img src="./property_inspection.png" alt="Property Inspection">
+                </div>
+                <div class="gallery-item scroll-animate delay-2">
+                    <img src="./office_meeting.png" alt="Office Meeting">
                 </div>
             </div>
         </div>
